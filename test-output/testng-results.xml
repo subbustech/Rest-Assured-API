@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3238" started-at="2020-01-08T20:22:31Z" finished-at="2020-01-08T20:22:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3238" started-at="2020-01-08T20:22:31Z" finished-at="2020-01-08T20:22:34Z">
+      <class name="pk2StudentsApp.Pr4AddNewStudent">
+        <test-method status="PASS" signature="addNewStudent()[pri:0, instance:pk2StudentsApp.Pr4AddNewStudent@604ed9f0]" name="addNewStudent" duration-ms="3193" started-at="2020-01-08T20:22:31Z" finished-at="2020-01-08T20:22:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewStudent -->
+      </class> <!-- pk2StudentsApp.Pr4AddNewStudent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
