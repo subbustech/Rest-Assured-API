@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pk2StudentsApp.Pr4AddNewStudent">
+      <class name="pk2StudentsApp.Pr5ExtractingResponse">
         <methods>
-          <include name="addNewStudent"/>
+          <include name="extractAllStudents"/>
         </methods>
-      </class> <!-- pk2StudentsApp.Pr4AddNewStudent -->
+      </class> <!-- pk2StudentsApp.Pr5ExtractingResponse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
