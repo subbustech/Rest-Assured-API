@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.equalTo;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 
 public class Pr4AddNewStudent {
 	@Test
