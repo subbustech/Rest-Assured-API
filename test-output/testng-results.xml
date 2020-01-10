@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3581" started-at="2020-01-10T20:37:41Z" finished-at="2020-01-10T20:37:45Z">
+  <suite name="Default suite" duration-ms="3465" started-at="2020-01-10T20:52:44Z" finished-at="2020-01-10T20:52:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3581" started-at="2020-01-10T20:37:41Z" finished-at="2020-01-10T20:37:45Z">
-      <class name="pk2StudentsApp.Pr6AddNewStudentAndDeleteTheStudentRaw">
-        <test-method status="PASS" signature="addNewStudentAndDeleteStudent()[pri:0, instance:pk2StudentsApp.Pr6AddNewStudentAndDeleteTheStudentRaw@604ed9f0]" name="addNewStudentAndDeleteStudent" duration-ms="3529" started-at="2020-01-10T20:37:41Z" finished-at="2020-01-10T20:37:45Z">
+    <test name="Default test" duration-ms="3465" started-at="2020-01-10T20:52:44Z" finished-at="2020-01-10T20:52:48Z">
+      <class name="pk2StudentsApp.Pr7AddNewStudentAndDeleteTheStudentJson">
+        <test-method status="PASS" signature="addNewStudentAndDeleteStudent()[pri:0, instance:pk2StudentsApp.Pr7AddNewStudentAndDeleteTheStudentJson@604ed9f0]" name="addNewStudentAndDeleteStudent" duration-ms="3411" started-at="2020-01-10T20:52:45Z" finished-at="2020-01-10T20:52:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewStudentAndDeleteStudent -->
-      </class> <!-- pk2StudentsApp.Pr6AddNewStudentAndDeleteTheStudentRaw -->
+      </class> <!-- pk2StudentsApp.Pr7AddNewStudentAndDeleteTheStudentJson -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
