@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pk3GooglePlaceApi.Pr1GooglePlaceAPI">
+      <class name="pk3GooglePlaceApi.Pr2GooglePlaceAPIXML">
         <methods>
           <include name="googlePlaces"/>
         </methods>
-      </class> <!-- pk3GooglePlaceApi.Pr1GooglePlaceAPI -->
+      </class> <!-- pk3GooglePlaceApi.Pr2GooglePlaceAPIXML -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

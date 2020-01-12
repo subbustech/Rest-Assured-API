@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class Pr1GooglePlaceAPI {
+public class Pr1GooglePlaceAPIJSON {
 	@Test
 	public void googlePlaces() {
 		
