@@ -15,7 +15,8 @@ public class Pr3GetStudentsWithProgrammeAndLimit {
 		RestAssured.baseURI = "http://localhost:8090/";
 
 		given().
-			queryParam("programme","Financial Analysis").and().queryParam("limit", "3").
+			queryParam("programme","Financial Analysis").and().
+			queryParam("limit", "3").
 				when().
 					get("student/list").
 					then().

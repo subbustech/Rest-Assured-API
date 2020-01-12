@@ -11,20 +11,22 @@ public class Pr4AddNewStudent {
 	@Test
 	public void addNewStudent() {
 		
+		String postBody = "{"+
+			    "\"firstName\": \"Venkat\","+
+			    "\"lastName\": \"Dinavahi\","+
+			    "\"email\": \"venkat@gmail.com\","+
+			    "\"programme\": \"Computer Science\","+
+			    "\"courses\": ["+
+			        "\"Java\","+
+			        "\"Php\","+
+			        "\"Data Science\""+
+			    "]"+
+			"}";
+		
 		RestAssured.baseURI = "http://localhost:8090";
 
 		given().
-			body("{"+
-				    "\"firstName\": \"Venkat\","+
-				    "\"lastName\": \"Dinavahi\","+
-				    "\"email\": \"venkat@gmail.com\","+
-				    "\"programme\": \"Computer Science\","+
-				    "\"courses\": ["+
-				        "\"Java\","+
-				        "\"Php\","+
-				        "\"Data Science\""+
-				    "]"+
-				"}").
+			body(postBody).
 			contentType("application/json").
 			when().
 				post("/student").
