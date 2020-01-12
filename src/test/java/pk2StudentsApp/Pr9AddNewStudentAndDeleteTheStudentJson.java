@@ -10,29 +10,36 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class Pr4UpdateStudentUsingPut {
+public class Pr9AddNewStudentAndDeleteTheStudentJson {
 	@Test
-	public void UpdateStudentUsingPut() {
+	public void addNewStudentAndDeleteStudent() {
 
-		String postBody = "{"+
-				"\"firstName\": \"Venkata Rao\","+
+		//Request Body to Post New Student
+		String requestBody = "{"+
+				"\"firstName\": \"Venkat\","+
 				"\"lastName\": \"Dinavahi\","+
-				"\"email\": \"venkat123@gmail.com\","+
+				"\"email\": \"venkat@gmail.com\","+
 				"\"programme\": \"Computer Science\","+
 				"\"courses\": ["+
 				"\"Java\","+
 				"\"Php\","+
-				"\"Data Science\","+
-				"\"C Language\""+
+				"\"Data Science\""+
 				"]"+
 				"}";
 
 		RestAssured.baseURI = "http://localhost:8090";
 
-		/**************************************************************
-		 ****************** Get the last student id *******************
-		 **************************************************************/
-		
+		//Post New Student
+		given().
+		body(requestBody).
+		contentType("application/json").
+		when().
+		post("/student").
+		then().
+		assertThat().body("msg",equalTo("Student added"));
+
+		System.out.println("New Student Added Successfully");
+
 		//Get the last student id
 		Response res = given().
 				when().
@@ -54,21 +61,15 @@ public class Pr4UpdateStudentUsingPut {
 
 		//Get last student id
 		int lastStudentIdJson = jsonBody.get("["+(totalJson-1)+"].id");
+		System.out.println("Last Student Id "+lastStudentIdJson);
+
 		
-		System.out.println("lastStudentIdJson :"+lastStudentIdJson);
-
-		/********************************************************************
-		 ********************** Update Last Student Id **********************
-		 ********************************************************************/
-
+		//Delete New Student Added
 		given().
-		body(postBody).
-		contentType("application/json").
-		pathParam("studentId", lastStudentIdJson).
-		log().all().
 		when().
-			put("/student/{studentId}").
-			then().
-				assertThat().body("msg",equalTo("Student Updated"));
+		delete("student/"+lastStudentIdJson).
+		then().
+		assertThat().statusCode(204);
+		System.out.println("New Student Added Successfully Deleted.");
 	}
 }

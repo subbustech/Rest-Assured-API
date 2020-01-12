@@ -7,10 +7,9 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class Pr7AddNewStudentAndDeleteTheStudentJson {
+public class Pr8AddNewStudentAndDeleteTheStudentRaw {
 	@Test
 	public void addNewStudentAndDeleteStudent() {
 
@@ -39,7 +38,7 @@ public class Pr7AddNewStudentAndDeleteTheStudentJson {
 		assertThat().body("msg",equalTo("Student added"));
 
 		System.out.println("New Student Added Successfully");
-
+		
 		//Get the last student id
 		Response res = given().
 				when().
@@ -49,27 +48,19 @@ public class Pr7AddNewStudentAndDeleteTheStudentJson {
 				contentType(ContentType.JSON).and().
 				extract().response();
 
-		//Convert the raw format of res into String
-		String resBody = res.asString();
-
-		//Convert the string into json
-		JsonPath jsonBody = new JsonPath(resBody);
-
-		//Access the values from json
-		//Get the size from JSON response
-		int totalJson = jsonBody.getList("").size();
+		//Get the size of the array in response
+		int total = res.body().path("list.size()");
 
 		//Get last student id
-		int lastStudentIdJson = jsonBody.get("["+(totalJson-1)+"].id");
-		System.out.println("Last Student Id "+lastStudentIdJson);
-
+		int lastStudentId = res.body().path("["+(total-1)+"].id");
+		System.out.println("Last Student Id "+lastStudentId);
 		
 		//Delete New Student Added
 		given().
-		when().
-		delete("student/"+lastStudentIdJson).
-		then().
-		assertThat().statusCode(204);
+				when().
+				delete("student/"+lastStudentId).
+				then().
+				assertThat().statusCode(204);
 		System.out.println("New Student Added Successfully Deleted.");
 	}
 }

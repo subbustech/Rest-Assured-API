@@ -12,7 +12,7 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class Pr5ExtractingResponse {
+public class Pr7ExtractingResponse {
 	@Test
 	public void extractAllStudents() {
 

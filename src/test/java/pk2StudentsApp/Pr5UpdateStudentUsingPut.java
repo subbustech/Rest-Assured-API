@@ -10,12 +10,21 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class Pr4UpdateStudentUsingPatch {
+public class Pr5UpdateStudentUsingPut {
 	@Test
 	public void UpdateStudentUsingPut() {
 
 		String postBody = "{"+
-				"\"email\": \"venkat12345@gmail.com\""+
+				"\"firstName\": \"Venkata Rao\","+
+				"\"lastName\": \"Dinavahi\","+
+				"\"email\": \"venkat123@gmail.com\","+
+				"\"programme\": \"Computer Science\","+
+				"\"courses\": ["+
+				"\"Java\","+
+				"\"Php\","+
+				"\"Data Science\","+
+				"\"C Language\""+
+				"]"+
 				"}";
 
 		RestAssured.baseURI = "http://localhost:8090";
@@ -58,8 +67,8 @@ public class Pr4UpdateStudentUsingPatch {
 		pathParam("studentId", lastStudentIdJson).
 		log().all().
 		when().
-			patch("/student/{studentId}").
+			put("/student/{studentId}").
 			then().
-				assertThat().body("msg",equalTo("Updated"));
+				assertThat().body("msg",equalTo("Student Updated"));
 	}
 }

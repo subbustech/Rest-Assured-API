@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class Pr1GetAllStudentsOptions {
+public class Pr10GetAllStudentsOptions {
 	@Test
 	public void getAllStudents() {
 		
