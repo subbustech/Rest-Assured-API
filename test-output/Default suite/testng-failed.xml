@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pk7RequestLogging.Pr1RequestLogging">
+      <class name="pk2StudentsApp.Pr2GetSpecificStudent">
         <methods>
           <include name="getAllStudents"/>
         </methods>
-      </class> <!-- pk7RequestLogging.Pr1RequestLogging -->
+      </class> <!-- pk2StudentsApp.Pr2GetSpecificStudent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

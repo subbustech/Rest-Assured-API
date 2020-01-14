@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4546" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:45Z">
+  <suite name="Default suite" duration-ms="3546" started-at="2020-01-14T20:27:29Z" finished-at="2020-01-14T20:27:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4546" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:45Z">
-      <class name="pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload">
-        <test-method status="PASS" signature="getProperties()[pri:0, instance:pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload@57baeedf]" name="getProperties" is-config="true" duration-ms="25" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:41Z">
+    <test name="Default test" duration-ms="3546" started-at="2020-01-14T20:27:29Z" finished-at="2020-01-14T20:27:33Z">
+      <class name="pk10PojoClasses.Pr2GetSpecificStudent">
+        <test-method status="PASS" signature="getAllStudents()[pri:0, instance:pk10PojoClasses.Pr2GetSpecificStudent@604ed9f0]" name="getAllStudents" duration-ms="3490" started-at="2020-01-14T20:27:29Z" finished-at="2020-01-14T20:27:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getProperties -->
-        <test-method status="PASS" signature="addNewStudent()[pri:0, instance:pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload@57baeedf]" name="addNewStudent" duration-ms="4472" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewStudent -->
-      </class> <!-- pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload -->
+        </test-method> <!-- getAllStudents -->
+      </class> <!-- pk10PojoClasses.Pr2GetSpecificStudent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

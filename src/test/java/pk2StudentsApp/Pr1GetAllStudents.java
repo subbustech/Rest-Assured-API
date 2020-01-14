@@ -24,6 +24,6 @@ public class Pr1GetAllStudents {
 						body("[0].lastName", equalTo("Harper")).and().
 						body("[0].courses[0]", equalTo("Accounting")).and().
 						body("[0].courses[1]", equalTo("Statistics")).and().
-						body("size()", equalTo(100));
+						body("size()", equalTo(109));
 	}
 }
