@@ -5,9 +5,10 @@ import static io.restassured.RestAssured.given;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class Pr1GooglePlaceAPIJSON {
+public class Pr2GooglePlaceAPIJSON {
 	@Test
 	public void googlePlaces() {
 		
@@ -25,18 +26,23 @@ public class Pr1GooglePlaceAPIJSON {
 						extract().response();
 		
 		//Print the response
-		System.out.println(res.asString());
+		String jsonresstr = res.asString();
+		System.out.println(jsonresstr);
 		
-		//Get the size of the array in response
-		int total = res.body().path("candidates.list.size()");
-		System.out.println("Total Restaurents Found"+ total);
+		//Convert the string into json
+		JsonPath jsonBody = new JsonPath(jsonresstr);
+
+		//Access the values from json
+		//Get the size from JSON response
+		int totalJson = jsonBody.getList("candidates").size();
+		System.out.println("Total Restaurents Found: "+ totalJson);
 		
 		//Get the Name of the Restaurant
-		String restaurant_name = res.body().path("candidates[0].name");
+		String restaurant_name = jsonBody.get("candidates[0].name");
 		System.out.println("Restaurant Name: "+restaurant_name);
 		
-		//Get the First Restaurent Details
-		String address = res.body().path("candidates[0].formatted_address");
+		//Get the First Restaurant Details
+		String address = jsonBody.get("candidates[0].formatted_address");
 		System.out.println("Address: "+address);
 	}
 }

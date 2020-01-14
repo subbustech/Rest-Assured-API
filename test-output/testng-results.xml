@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3816" started-at="2020-01-12T21:14:21Z" finished-at="2020-01-12T21:14:25Z">
+  <suite name="Default suite" duration-ms="3370" started-at="2020-01-14T16:01:18Z" finished-at="2020-01-14T16:01:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3816" started-at="2020-01-12T21:14:21Z" finished-at="2020-01-12T21:14:25Z">
-      <class name="pk3GooglePlaceApi.Pr2GooglePlaceAPIXML">
-        <test-method status="PASS" signature="googlePlaces()[pri:0, instance:pk3GooglePlaceApi.Pr2GooglePlaceAPIXML@604ed9f0]" name="googlePlaces" duration-ms="3748" started-at="2020-01-12T21:14:21Z" finished-at="2020-01-12T21:14:25Z">
+    <test name="Default test" duration-ms="3370" started-at="2020-01-14T16:01:18Z" finished-at="2020-01-14T16:01:21Z">
+      <class name="pk7RequestLogging.Pr1RequestLogging">
+        <test-method status="PASS" signature="getAllStudents()[pri:0, instance:pk7RequestLogging.Pr1RequestLogging@604ed9f0]" name="getAllStudents" duration-ms="3319" started-at="2020-01-14T16:01:18Z" finished-at="2020-01-14T16:01:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googlePlaces -->
-      </class> <!-- pk3GooglePlaceApi.Pr2GooglePlaceAPIXML -->
+        </test-method> <!-- getAllStudents -->
+      </class> <!-- pk7RequestLogging.Pr1RequestLogging -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

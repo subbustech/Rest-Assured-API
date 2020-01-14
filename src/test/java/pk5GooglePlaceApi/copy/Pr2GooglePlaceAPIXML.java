@@ -1,4 +1,4 @@
-package pk3GooglePlaceApi;
+package pk5GooglePlaceApi.copy;
 
 import static io.restassured.RestAssured.given;
 
@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
+import pk0Resources.CommonFunctions;
 
 public class Pr2GooglePlaceAPIXML {
 	@Test
@@ -25,12 +26,8 @@ public class Pr2GooglePlaceAPIXML {
 					then().
 						extract().response();
 		
-		//Print the response
-		String xmlresstr = res.asString();
-		System.out.println(xmlresstr);
-		
-		//Convert the string (response) into XMLPath
-		XmlPath xp = new XmlPath(xmlresstr);
+		//Get the XML Body
+		XmlPath xp = CommonFunctions.returnXmlBody(res);
 		
 		//Get the size of the array in response
 		int total = xp.get("FindPlaceFromTextResponse.candidates.size()");
