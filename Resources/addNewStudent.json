@@ -1,0 +1,11 @@
+{
+    "firstName": "Venkat",
+    "lastName": "Dinavahi",
+    "email": "venkat10@gmail.com",
+    "programme": "Computer Science",
+    "courses": [
+        "Java",
+        "Php",
+        "Data Science"
+    ]
+}

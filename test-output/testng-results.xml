@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3370" started-at="2020-01-14T16:01:18Z" finished-at="2020-01-14T16:01:21Z">
+  <suite name="Default suite" duration-ms="4546" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3370" started-at="2020-01-14T16:01:18Z" finished-at="2020-01-14T16:01:21Z">
-      <class name="pk7RequestLogging.Pr1RequestLogging">
-        <test-method status="PASS" signature="getAllStudents()[pri:0, instance:pk7RequestLogging.Pr1RequestLogging@604ed9f0]" name="getAllStudents" duration-ms="3319" started-at="2020-01-14T16:01:18Z" finished-at="2020-01-14T16:01:21Z">
+    <test name="Default test" duration-ms="4546" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:45Z">
+      <class name="pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload">
+        <test-method status="PASS" signature="getProperties()[pri:0, instance:pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload@57baeedf]" name="getProperties" is-config="true" duration-ms="25" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAllStudents -->
-      </class> <!-- pk7RequestLogging.Pr1RequestLogging -->
+        </test-method> <!-- getProperties -->
+        <test-method status="PASS" signature="addNewStudent()[pri:0, instance:pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload@57baeedf]" name="addNewStudent" duration-ms="4472" started-at="2020-01-14T18:42:41Z" finished-at="2020-01-14T18:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewStudent -->
+      </class> <!-- pk9StaticJsonPayload.Pr4AddNewStudentUsingStaticJsonPayload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
