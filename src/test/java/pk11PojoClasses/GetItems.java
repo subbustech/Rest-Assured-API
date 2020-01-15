@@ -54,7 +54,7 @@ public class GetItems {
 	public GetSearchInfo getSearchInfo() {
 		return searchInfo;
 	}
-	public void setAccessInfo(GetSearchInfo searchInfo) {
+	public void setSearchInfo(GetSearchInfo searchInfo) {
 		this.searchInfo = searchInfo;
 	}
 }

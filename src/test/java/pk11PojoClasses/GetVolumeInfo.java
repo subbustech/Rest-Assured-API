@@ -4,6 +4,7 @@ import java.util.List;
 
 public class GetVolumeInfo {
 	private String title;
+	private String subtitle;
 	private List<String> authors;
 	private String publisher;
 	private String publishedDate;
@@ -12,6 +13,7 @@ public class GetVolumeInfo {
 	private GetReadingModes readingModes;
 	private int pageCount;
 	private String printType;
+	private List<String> categories;
 	private float averageRating;
 	private int ratingsCount;
 	private String maturityRating;
@@ -28,6 +30,12 @@ public class GetVolumeInfo {
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+	public String getSubtitle() {
+		return subtitle;
+	}
+	public void setSubtitle(String subtitle) {
+		this.subtitle = subtitle;
 	}
 	public List<String> getAuthors() {
 		return authors;
@@ -76,6 +84,12 @@ public class GetVolumeInfo {
 	}
 	public void setPrintType(String printType) {
 		this.printType = printType;
+	}
+	public List<String> getCategories() {
+		return categories;
+	}
+	public void setCategories(List<String> categories) {
+		this.categories = categories;
 	}
 	public float getAverageRating() {
 		return averageRating;
