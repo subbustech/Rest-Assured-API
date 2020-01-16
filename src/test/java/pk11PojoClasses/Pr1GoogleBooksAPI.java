@@ -20,5 +20,9 @@ public class Pr1GoogleBooksAPI {
 					then().extract().response().as(GetBooks.class);
 		
 		System.out.println("Total Items : "+gb.getTotalItems());
+		
+		for(int i=0; i<gb.getItems().size(); i++) {
+			System.out.println("Title "+(i+1)+": "+gb.getItems().get(i).getVolumeInfo().getTitle());
+		}
 	}
 }

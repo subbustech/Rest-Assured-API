@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pk11PojoClasses.Pr1GoogleBooksAPI">
+      <class name="pk12PojoClasses.Pr4AddNewStudent">
         <methods>
-          <include name="googleBookStore"/>
+          <include name="addNewStudent"/>
         </methods>
-      </class> <!-- pk11PojoClasses.Pr1GoogleBooksAPI -->
+      </class> <!-- pk12PojoClasses.Pr4AddNewStudent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
