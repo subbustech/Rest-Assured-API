@@ -1,4 +1,4 @@
-package pk5GooglePlaceApi.copy;
+package pk5GooglePlaceApi;
 
 import static io.restassured.RestAssured.given;
 
